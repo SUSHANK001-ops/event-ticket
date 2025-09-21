@@ -32,10 +32,19 @@ const Home = () => {
   const categories = ["All", ...new Set(events.map((event) => event.category))];
 
   const filteredEvents = events.filter((event) => {
+    const venueText = [
+      event.venue?.name,
+      event.venue?.city,
+      event.venue?.state,
+      event.venue?.address,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
     const matchesSearch =
       event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       event.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      event.location.toLowerCase().includes(searchTerm.toLowerCase());
+      venueText.includes(searchTerm.toLowerCase());
     const matchesCategory =
       selectedCategory === "" ||
       selectedCategory === "All" ||

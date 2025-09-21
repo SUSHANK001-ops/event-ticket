@@ -207,7 +207,7 @@ const EventDetails = () => {
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    {event.time}
+                    {event.startTime} - {event.endTime}
                   </div>
                   <div className="flex items-center">
                     <svg
@@ -229,7 +229,7 @@ const EventDetails = () => {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    {event.location}
+                    {event.venue?.name || "Venue TBA"}
                   </div>
                 </div>
 
