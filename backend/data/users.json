@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "507f1f77bcf86cd799439011",
+    "name": "Admin User",
+    "email": "admin@eventticket.com",
+    "password": "123456",
+    "role": "admin",
+    "phone": "+1234567890",
+    "isActive": true,
+    "emailVerified": true
+  },
+  {
+    "_id": "507f1f77bcf86cd799439012",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "123456",
+    "role": "user",
+    "phone": "+1234567891",
+    "isActive": true,
+    "emailVerified": true
+  },
+  {
+    "_id": "507f1f77bcf86cd799439013",
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "password": "123456",
+    "role": "user",
+    "phone": "+1234567892",
+    "isActive": true,
+    "emailVerified": true
+  },
+  {
+    "_id": "507f1f77bcf86cd799439014",
+    "name": "Mike Johnson",
+    "email": "mike@example.com",
+    "password": "123456",
+    "role": "user",
+    "phone": "+1234567893",
+    "isActive": true,
+    "emailVerified": false
+  },
+  {
+    "_id": "507f1f77bcf86cd799439015",
+    "name": "Sarah Wilson",
+    "email": "sarah@example.com",
+    "password": "123456",
+    "role": "user",
+    "phone": "+1234567894",
+    "isActive": true,
+    "emailVerified": true
+  }
+]
